@@ -48,8 +48,8 @@ mv $compile_cache_dir/public .
 [[ -f public/Procfile ]] && mv public/Procfile .
 tar xzf $compile_webtob_tgz
 
-cp -f $compile_buildpack_dir/conf/http.m webtob/config/http.m
-cp -f $compile_buildpack_dir/conf/mime.types webtob/config/mime.types
+cp -f $compile_buildpack_dir/conf/http.m WebtoB-5.0.0.1-B82.63.5-Linux-K2.6_x64/webtob/config/http.m
+cp -f $compile_buildpack_dir/conf/mime.types WebtoB-5.0.0.1-B82.63.5-Linux-K2.6_x64/webtob/config/mime.types
 
 [[ -f public/http.m ]] && mv public/http.m webtob/config/http.m
 [[ -f public/mime.types ]] && mv public/mime.types webtob/config/mime.types
