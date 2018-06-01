@@ -63,31 +63,3 @@ cp $compile_buildpack_bin/boot.sh .
 #ls -lah
 
 # ------------------------------------------------------------------------------------------------
-# ------------------------------------------------------------------------------------------------
-
-cd $compile_build_dir
-
-# ------------------------------------------------------------------------------------------------
-
-echo "-----> Doing work with $(basename ${compile_webtob_tgz%.tar.gz}) son."
-mkdir -p $compile_cache_dir/public
-mv * $compile_cache_dir/public
-mv $compile_cache_dir/public .
-[[ -f public/Procfile ]] && mv public/Procfile .
-tar xzf $compile_webtob_tgz
-
-cp -f $compile_buildpack_dir/public/http.m webtob/config/http.m
-cp -f $compile_buildpack_dir/public/mime.types webtob/config/mime.types
-
-#[[ -f public/http.m ]] && mv public/nginx.conf nginx/conf/nginx.conf
-#[[ -f public/mime.types ]] && mv public/mime.types nginx/conf/mime.types
-
-echo "-----> Ensuring manifest.yml & stackato.yml aren't available in public/"
-rm -f public/{manifest,stackato}.yml
-
-# ------------------------------------------------------------------------------------------------
-
-cp $compile_buildpack_bin/boot.sh .
-#ls -lah
-
-# ------------------------------------------------------------------------------------------------
