@@ -1,4 +1,3 @@
-
 # ------------------------------------------------------------------------------------------------
 # Copyright 2013 Jordon Bedwell.
 # Apache License.
@@ -14,6 +13,15 @@
 # ------------------------------------------------------------------------------------------------
 
 export APP_ROOT=$HOME
+
+export WEBTOBDIR=$APP_ROOT/webtob
+
+PATH="${WEBTOBDIR}/bin:${PATH}"
+export PATH
+
+export LD_LIBRARY_PATH=$WEBTOBDIR/lib:${LD_LIBRARY_PATH}
+
+
 
 conf_file=$APP_ROOT/webtob/config/http.m
 if [ -f $APP_ROOT/public/http.m ]
