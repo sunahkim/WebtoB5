@@ -1,3 +1,4 @@
+
 # ------------------------------------------------------------------------------------------------
 # Copyright 2013 Jordon Bedwell.
 # Apache License.
@@ -27,6 +28,6 @@ fi
 
 (tail -f -n 0 $APP_ROOT/webtob/logs/*.log &)
 #exec $APP_ROOT/nginx/sbin/nginx -p $APP_ROOT/nginx -c $APP_ROOT/nginx/conf/nginx.conf
-exec $APP_ROOT/webtob/bin/wscfl -i http.m $APP_ROOT/webtob/bin/wsboot -V
+exec $APP_ROOT/webtob/bin/wscfl -i $APP_ROOT/webtob/http.m 
+exec $APP_ROOT/webtob/bin/wsboot -V
 # ------------------------------------------------------------------------------------------------
-
