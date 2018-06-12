@@ -14,7 +14,8 @@ qpsx1   WEBTOBDIR="$APP_ROOT/webtob",
                 #Options="IgnoreExpect100Continue",
                 LOGGING = "log1",
                 ERRORLOG = "log2",
-                SYSLOG = "syslog"
+                SYSLOG = "syslog",
+                MimetypesConfig=""
 
 *HTH_THREAD
 hth_worker
