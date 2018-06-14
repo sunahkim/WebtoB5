@@ -21,7 +21,7 @@ export PATH
 
 export LD_LIBRARY_PATH=$WEBTOBDIR/lib:${LD_LIBRARY_PATH}
 
-
+echo "suna"
 
 conf_file=$APP_ROOT/webtob/config/http.m
 if [ -f $APP_ROOT/public/http.m ]
