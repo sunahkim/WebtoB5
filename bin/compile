@@ -46,6 +46,7 @@ mkdir -p $compile_cache_dir/public
 mv * $compile_cache_dir/public
 mv $compile_cache_dir/public .
 [[ -f public/Procfile ]] && mv public/Procfile .
+echo "pwd: $(pwd)"
 tar xzf $compile_webtob_tgz
 
 cp -f $compile_buildpack_dir/conf/http.m webtob/config/http.m
