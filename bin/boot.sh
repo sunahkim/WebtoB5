@@ -34,6 +34,6 @@ fi
 
 # ------------------------------------------------------------------------------------------------
 #exec $APP_ROOT/nginx/sbin/nginx -p $APP_ROOT/nginx -c $APP_ROOT/nginx/conf/nginx.conf
-exec $APP_ROOT/webtob/bin/wscfl -i $APP_ROOT/webtob/config/http.m $APP_ROOT/webtob/bin/wsboot -"V"
+exec $APP_ROOT/webtob/bin/wscfl -i $APP_ROOT/webtob/config/http.m $APP_ROOT/webtob/bin/wsboot
 
 # ------------------------------------------------------------------------------------------------
