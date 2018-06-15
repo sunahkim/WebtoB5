@@ -14,7 +14,7 @@
 
 export APP_ROOT=$HOME
 
-export WEBTOBDIR="${APP_ROOT}/webtob"
+export WEBTOBDIR=/home/vcap/app/webtob
 
 PATH="${WEBTOBDIR}/bin:${PATH}"
 export PATH
