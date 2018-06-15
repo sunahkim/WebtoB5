@@ -39,9 +39,8 @@ fi
 #(tail -f -n 0 $APP_ROOT/webtob/log/*.log* &)
 
 $APP_ROOT/webtob/bin/wsboot -V &
-$APP_ROOT/webtob/bin/wsboot
+#$APP_ROOT/webtob/bin/wsboot
 (tail -f -n 0 $APP_ROOT/webtob/log/*.log* &)
-
 exec $APP_ROOT/webtob/bin/wscfl -i $APP_ROOT/webtob/config/http.m 
 #exec $APP_ROOT/webtob/bin/wsboot
 echo "suna"
