@@ -16,10 +16,10 @@ export APP_ROOT=$HOME
 
 export WEBTOBDIR=$APP_ROOT/webtob
 
-#PATH="${WEBTOBDIR}/bin:${PATH}"
-#export PATH
+PATH="${WEBTOBDIR}/bin:${PATH}"
+export PATH
 
-#export LD_LIBRARY_PATH=$WEBTOBDIR/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=$WEBTOBDIR/lib:${LD_LIBRARY_PATH}
 
 echo "suna"
 
