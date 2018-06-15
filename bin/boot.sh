@@ -43,6 +43,13 @@ fi
 $APP_ROOT/webtob/bin/wscfl -i $APP_ROOT/webtob/config/http.m 
 sleep 2
 
+
+echo "pwd: $(pwd)"
+
+cd /home/vcap/app/webtob/bin
+
+ls -la
+ 
 /home/vcap/app/webtob/bin/wsboot -"V"
 
 #exec $APP_ROOT/webtob/bin/wsboot -v
