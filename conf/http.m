@@ -2,10 +2,9 @@
 webtob1
 
 *NODE
-webtob   WEBTOBDIR="ENV["APP_ROOT"]/webtob",
+webtob   WEBTOBDIR="$WEBTOBDIR",
                 SHMKEY = 54030,
-                DOCROOT="ENV["APP_ROOT"]/webtob/docs",
-                PORT = "ENV[¡®PORT¡¯]",
+                DOCROOT="$WEBTOBDIR/docs",
                 #PORT = "5580",
                 HTH = 1,
                 #Group = "nobody",
@@ -15,8 +14,7 @@ webtob   WEBTOBDIR="ENV["APP_ROOT"]/webtob",
                 #Options="IgnoreExpect100Continue",
                 LOGGING = "log1",
                 ERRORLOG = "log2",
-                SYSLOG = "syslog"#,
-                #MimetypesConfig=""
+                SYSLOG = "syslog"
 
 *HTH_THREAD
 hth_worker
@@ -41,14 +39,14 @@ ssi             SVGNAME = ssig, MinProc = 2, MaxProc = 10, ASQCount = 1
 *URI
 
 *ALIAS
-alias1          URI = "/cgi-bin/", RealPath = "ENV["APP_ROOT"]/webtob/cgi-bin/"
+alias1          URI = "/cgi-bin/", RealPath = "$WEBTOBDIR/cgi-bin/"
 
 *LOGGING
-syslog          Format = "SYSLOG", FileName = "ENV["APP_ROOT"]/webtob/log/system.log_%M%%D%%Y%",
+syslog          Format = "SYSLOG", FileName = "$WEBTOBDIR/log/system.log_%M%%D%%Y%",
                         Option = "sync"
-log1            Format = "DEFAULT", FileName = "ENV["APP_ROOT"]/webtob/log/access.log_%M%%D%%Y%",
+log1            Format = "DEFAULT", FileName = "$WEBTOBDIR//log/access.log_%M%%D%%Y%",
                         Option = "sync"
-log2            Format = "ERROR", FileName = "ENV["APP_ROOT"]/webtob/log/error.log_%M%%D%%Y%",
+log2            Format = "ERROR", FileName = "$WEBTOBDIR/log/error.log_%M%%D%%Y%",
                         Option = "sync"
 
 *ERRORDOCUMENT
