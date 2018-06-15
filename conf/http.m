@@ -4,7 +4,7 @@ webtob1
 *NODE
 webtob   WEBTOBDIR="$WEBTOBDIR",
                 SHMKEY = 54030,
-                DOCROOT="$WEBTOBDIR/docs",
+                #DOCROOT="docs",
                 PORT = "8080",
                 HTH = 1,
                 #Group = "nobody",
