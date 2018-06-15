@@ -14,7 +14,7 @@ qpsx1   WEBTOBDIR="$APP_ROOT/webtob",
                 #Options="IgnoreExpect100Continue",
                 LOGGING = "log1",
                 ERRORLOG = "log2",
-                SYSLOG = "syslog",
+                SYSLOG = "syslog"#,
                 MimetypesConfig=""
 
 *HTH_THREAD
@@ -33,7 +33,7 @@ cgig            NODENAME = "qpsx1", SVRTYPE = CGI
 ssig            NODENAME = "qpsx1", SVRTYPE = SSI
 
 *SERVER
-html            SVGNAME = htmlg, MinProc = 2, MaxProc = 10, ASQCount = 1
+#html            SVGNAME = htmlg, MinProc = 2, MaxProc = 10, ASQCount = 1
 cgi             SVGNAME = cgig, MinProc = 2, MaxProc = 10, ASQCount = 1
 ssi             SVGNAME = ssig, MinProc = 2, MaxProc = 10, ASQCount = 1
 
