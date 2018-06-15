@@ -43,7 +43,7 @@ fi
 $APP_ROOT/webtob/bin/wscfl -i $APP_ROOT/webtob/config/http.m 
 sleep 2
 
-/home/vcap/app/webtob/wsboot -"V"
+/home/vcap/app/webtob/bin/wsboot -"V"
 
 #exec $APP_ROOT/webtob/bin/wsboot -v
 echo "suna"
