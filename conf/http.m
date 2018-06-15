@@ -5,7 +5,7 @@ webtob1
 webtob   WEBTOBDIR="$WEBTOBDIR",
                 SHMKEY = 54030,
                 DOCROOT="$WEBTOBDIR/docs",
-                #PORT = "5580",
+                PORT = "5580",
                 HTH = 1,
                 #Group = "nobody",
                 #User = "nobody",
