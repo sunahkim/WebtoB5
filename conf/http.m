@@ -2,7 +2,7 @@
 webtob1
 
 *NODE
-qpsx1   WEBTOBDIR="$APP_ROOT/webtob",
+webtob   WEBTOBDIR="/home/vcap/app/webtob",
                 SHMKEY = 54030,
                 DOCROOT="$APP_ROOT/webtob/docs",
                 PORT = "5580",
