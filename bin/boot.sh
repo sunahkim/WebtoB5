@@ -14,7 +14,7 @@
 
 export APP_ROOT=$HOME
 
-export WEBTOBDIR=$HOME/webtob
+export WEBTOBDIR="${APP_ROOT}/webtob"
 
 PATH="${WEBTOBDIR}/bin:${PATH}"
 export PATH
@@ -50,7 +50,7 @@ cd /home/vcap/app/webtob/bin
 
 ls -la
  
-/home/vcap/app/webtob/bin/wsboot -"V"
+$APP_ROOT/webtob/bin/wsboot
 
 #exec $APP_ROOT/webtob/bin/wsboot -v
 echo "suna"
