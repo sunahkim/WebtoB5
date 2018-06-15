@@ -46,7 +46,7 @@ sleep 2
 
 echo "pwd: $(pwd)"
 
-cd /home/vcap/app/webtob
+cd /home/vcap/app/webtob/bin
 
 ls -la
  
