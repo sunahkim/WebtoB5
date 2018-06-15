@@ -42,11 +42,11 @@ ssi             SVGNAME = ssig, MinProc = 2, MaxProc = 10, ASQCount = 1
 alias1          URI = "/cgi-bin/", RealPath = "$WEBTOBDIR/cgi-bin/"
 
 *LOGGING
-syslog          Format = "SYSLOG", FileName = "$WEBTOBDIR/log/system.log_%M%%D%%Y%",
+syslog          Format = "SYSLOG", FileName = "log/system.log_%M%%D%%Y%",
                         Option = "sync"
-log1            Format = "DEFAULT", FileName = "$WEBTOBDIR//log/access.log_%M%%D%%Y%",
+log1            Format = "DEFAULT", FileName = "log/access.log_%M%%D%%Y%",
                         Option = "sync"
-log2            Format = "ERROR", FileName = "$WEBTOBDIR/log/error.log_%M%%D%%Y%",
+log2            Format = "ERROR", FileName = "log/error.log_%M%%D%%Y%",
                         Option = "sync"
 
 *ERRORDOCUMENT
